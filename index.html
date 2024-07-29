@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minimalist Website</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/header.css"><!-- Link ke file CSS untuk desain -->
+    </head>
+    <body>
+        <div class="navbar box-mid">
+            <div class="navbrand" data-aos="fade-up" data-aos-once="true"><a onclick="scrollToTarget('landing')"></a>
+            </div>
+            <div class="navcenter" data-aos="fade-up" data-aos-once="false">
+                <a href="#home">HOME</a> <a href="#about">ABOUT</a><a href="#contact">CONTACT</a>
+            </div>
+            <div class="navsupport" data-aos="fade-up" data-aos-once="true"><a onclick="scrollToTargetAdjusted('contact',75)" target="_blank">Contact</a>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div> <!-- Bagian yang akan muncul di halaman home -->
+        <section id="home" style="display: block;">
+            <div class="home-section">
+                <div class="effect-wrap">
+                    <div class="effect effect-1"></div>
+                    <div class="home-text">
+                        <div class="logo-home">
+                            <img src="img/icon/satriabagus.jpg" alt="Home">
+                        </div>
+                        <h1>SATRIA BAGUS PRATAMA</h1>
+                        <p> WELCOME TO ROGUECOLT WEBSITE</p>
+                        <p> saya pelajar di SMA NEGERI 5 CIMAHI.</p>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- Bagian yang akan muncul di halaman about -->
+        <section id="about" style="display: none;">
+            <div class="about-section">
+                <div class="logo-about">
+                    <div class="img-box inner-shadow"><img src="img/icon/fotomember.jpg" class="outer-shadow" alt="about-pic">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h1>PT ROGUECOLT</h1>
+                    <h2>VISI</h2>
+                    <p>Menjadi siswa yang berprestasi dan membanggakan orang tua.</p>
+                    <h2>MISI</h2>
+                    <p>Meningkatkan kinerja:
+                    di sekolah agar berprestasi </p>
+
+                </div>
+                <h2 id="toggleFAQ" class="faq-button">ANGGOTA</h2>
+                <div id="faqContainer" class="faq-container">
+                    <ul id="faq-list" class="faq-list">
+                        <li><span class="faq-question">MOCHAMMAD SATRIA BAGUS PRATAMA</span>
+                            <div class="faq-answer">
+                              <p>KELAS : XII IPS 1</p>
+                              <p>TANGGAL LAHIR : 24 NOVEMBER 2006</p>
+                            </div></li>
+         
+                            
+                    </ul>
+                </div>
+                <div class="space"></div>
+            </div>
+     
+        </div>
+    </div>
+</section>
+
+ <!-- Bagian yang akan muncul di halaman contact -->
+        <section id="contact" style="display: none;">
+    <div class="contact-section">n
+        <h2>CONTACT</h2>
+        <div class="contact-info">
+    <div class="contact-item">
+        <i class="fab fa-whatsapp"></i>
+        <p>+62-815-7202-4769</p>
+    </div>
+    <div class="contact-item">
+        <i class="far fa-envelope"></i>
+        <p>satriabagusp19.gmail.com</p>
+    </div>
+</div>
+        <form id="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="text" id="feedback" placeholder="Feedback / Criticism" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button id="submit-btn" type="submit">Submit</button>
+</form>
+
+    </div>
+</section>
+
+        <script src="js/main.js"></script> <!-- Link ke file JavaScript untuk interaksi -->
+    </body>
+</html>
